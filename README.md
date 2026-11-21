@@ -123,21 +123,22 @@ plt.show()
 - Uses a fixed threshold value (`127`) across the entire grayscale image.
 - Pixels above `127` are set to `255` (white/foreground) and pixels below are set to `0` (black/background).
 
-<img width="614" height="765" alt="image" src="https://github.com/user-attachments/assets/5cc04655-7040-499f-9a83-b2fa70c2d36a" />
+<img width="414" height="536" alt="image" src="https://github.com/user-attachments/assets/7f045b76-0c78-4ae2-bb3f-4e824e90bd90" />
 
 
 ### Adaptive Thresholding
 - Threshold values are calculated locally using a Gaussian-weighted neighborhood (`11x11` block size, constant `C = 2`).
 - Preserves fine edges and details effectively under varying lighting or uneven illumination.
 
-<img width="727" height="797" alt="image" src="https://github.com/user-attachments/assets/dd86de28-e181-405e-b169-b2c6724be67d" />
+<img width="428" height="520" alt="image" src="https://github.com/user-attachments/assets/8bbc0068-8c2c-41d7-9570-6a1ac3e8acdb" />
 
 
 ### Otsu's Thresholding
 - Automatically computes the optimal threshold value by minimizing intra-class variance.
 - Produces clean foreground-background separation, particularly effective for images with bimodal intensity histograms.
 
-![Uploading image.png…]()
+<img width="347" height="504" alt="image" src="https://github.com/user-attachments/assets/08e09018-72ba-4f7d-953b-de3f3eb3de55" />
+
 
 
 ## Result
