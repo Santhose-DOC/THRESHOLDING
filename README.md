@@ -116,17 +116,29 @@ plt.show()
 ### Original Image
 - The original color image (`my.jpeg`) is loaded in RGB format for reference alongside the segmented outputs.
 
+<img width="453" height="637" alt="image" src="https://github.com/user-attachments/assets/48f3f605-243e-492c-a5cf-303e7603bd29" />
+
+
 ### Global Thresholding
 - Uses a fixed threshold value (`127`) across the entire grayscale image.
 - Pixels above `127` are set to `255` (white/foreground) and pixels below are set to `0` (black/background).
+
+<img width="614" height="765" alt="image" src="https://github.com/user-attachments/assets/5cc04655-7040-499f-9a83-b2fa70c2d36a" />
+
 
 ### Adaptive Thresholding
 - Threshold values are calculated locally using a Gaussian-weighted neighborhood (`11x11` block size, constant `C = 2`).
 - Preserves fine edges and details effectively under varying lighting or uneven illumination.
 
+<img width="727" height="797" alt="image" src="https://github.com/user-attachments/assets/dd86de28-e181-405e-b169-b2c6724be67d" />
+
+
 ### Otsu's Thresholding
 - Automatically computes the optimal threshold value by minimizing intra-class variance.
 - Produces clean foreground-background separation, particularly effective for images with bimodal intensity histograms.
+
+![Uploading image.png…]()
+
 
 ## Result
 
